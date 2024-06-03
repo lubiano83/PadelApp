@@ -3,23 +3,11 @@
 		"id": 1,
 		"hour": "20:30",
 		"time": "1:30",
-		"category": "2ta",
+		"category": 2,
 		"court": 5,
 		"users": [
 			{
 				"userId": 1,
-				"cantidad": 1
-			},
-			{
-				"userId": 2,
-				"cantidad": 1
-			},
-			{
-				"userId": 3,
-				"cantidad": 1
-			},
-			{
-				"userId": 4,
 				"cantidad": 1
 			}
 		]
@@ -28,13 +16,8 @@
 		"id": 2,
 		"hour": "20:30",
 		"time": "1:30",
-		"category": "2ta",
+		"category": 2,
 		"court": 4,
-		"users": [
-			{
-				"userId": 5,
-				"cantidad": 1
-			}
-		]
+		"users": []
 	}
 ]

@@ -5,7 +5,7 @@
 		"email": "mail1",
 		"image": "foto1",
 		"password": "password1",
-		"category": "1era",
+		"category": 2,
 		"isAdmin": true
 	},
 	{
@@ -14,7 +14,7 @@
 		"email": "mail2",
 		"image": "foto2",
 		"password": "password2",
-		"category": "1era",
+		"category": 1,
 		"isAdmin": false
 	},
 	{
@@ -23,7 +23,7 @@
 		"email": "mail3",
 		"image": "foto3",
 		"password": "password3",
-		"category": "3era",
+		"category": 3,
 		"isAdmin": false
 	},
 	{
@@ -32,7 +32,7 @@
 		"email": "mail4",
 		"image": "foto4",
 		"password": "password4",
-		"category": "4ta",
+		"category": 4,
 		"isAdmin": false
 	},
 	{
@@ -41,7 +41,7 @@
 		"email": "mail5",
 		"image": "foto5",
 		"password": "password5",
-		"category": "5ta",
+		"category": 5,
 		"isAdmin": false
 	}
 ]

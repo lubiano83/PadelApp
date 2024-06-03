@@ -124,20 +124,24 @@ export default class MatchManager {
             // Calcular la cantidad total de jugadores actuales
             const totalPlayers = matches[matchIndex].users.reduce((acc, user) => acc + user.cantidad, 0);
     
-            if(totalPlayers < 4){
-                // Verificar si el usuario ya está registrado en otro partido a la misma hora
-                const userInOtherMatch = matches.some(match => match.hour === matchById.hour && match.users.some(user => user.userId === userId));
-                if (userInOtherMatch) {
-                    return "El usuario ya está registrado en otro partido a la misma hora";
+            if(totalPlayers < 4) {
+                // Verificar si el usuario esta en la misma categoria
+                if (matchById.category === userById.category) {
+                    // Verificar si el usuario ya está registrado en otro partido a la misma hora
+                    const userInOtherMatch = matches.some(match => match.hour === matchById.hour && match.users.some(user => user.userId === userId));
+                    if (userInOtherMatch) {
+                        return "El jugador ya está registrado en otro partido";
+                    } else {
+                        matches[matchIndex].users.push({ userId, cantidad: 1 });
+                        await this.#writeFile(matches);
+                        return "Jugador Agregado";
+                    }
                 } else {
-                    matches[matchIndex].users.push({ userId, cantidad: 1 });
-                    await this.#writeFile(matches);
-                    return "Jugador Agregado";
+                    return "El jugador no pertenece a la misma categoria";
                 }
             } else {
                 return "No se puede agregar mas de 4 jugadores";
             }
-            
         } catch (error) {
             console.log(error.message);
             return "Error interno";
