@@ -1,0 +1,20 @@
+{
+  "name": "actividad-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch --no-warnings app.js",
+    "stop-mac": "pkill -f node",
+    "stop-linux": "killall -9 node",
+    "stop-windows": "taskkill /F /IM node.exe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

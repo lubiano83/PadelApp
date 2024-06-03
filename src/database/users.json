@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"name": "usuario1",
+		"email": "mail1",
+		"image": "foto1",
+		"password": "password1",
+		"category": "1era",
+		"isAdmin": true
+	},
+	{
+		"id": 2,
+		"name": "usuario2",
+		"email": "mail2",
+		"image": "foto2",
+		"password": "password2",
+		"category": "1era",
+		"isAdmin": false
+	},
+	{
+		"id": 3,
+		"name": "usuario3",
+		"email": "mail3",
+		"image": "foto3",
+		"password": "password3",
+		"category": "3era",
+		"isAdmin": false
+	},
+	{
+		"id": 4,
+		"name": "usuario4",
+		"email": "mail4",
+		"image": "foto4",
+		"password": "password4",
+		"category": "4ta",
+		"isAdmin": false
+	},
+	{
+		"id": 5,
+		"name": "usuario5",
+		"email": "mail5",
+		"image": "foto5",
+		"password": "password5",
+		"category": "5ta",
+		"isAdmin": false
+	}
+]
