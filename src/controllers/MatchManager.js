@@ -126,7 +126,7 @@ export default class MatchManager {
     
             if(totalPlayers < 4) {
                 // Verificar si el usuario esta en la misma categoria
-                if (matchById.category === userById.category) {
+                if (matchById.category === userById.category || matchById.category === userById.category + 1) {
                     // Verificar si el usuario ya está registrado en otro partido a la misma hora
                     const userInOtherMatch = matches.some(match => match.hour === matchById.hour && match.users.some(user => user.userId === userId));
                     if (userInOtherMatch) {
